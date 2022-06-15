@@ -23,14 +23,9 @@ app.get('/ping', (req, res) => {
         profiles: ['dev'],
         level: 'debug'
     }
-    SpringCloudConfig.load(options).then((x) => {
-        res.status(200).json({
-            message: x
-        })
-    }).catch((err) => {
-        res.status(500).json({
-            message: err
-        })
+    SpringCloudConfig.load(options);
+    res.status(200).json({
+        message: SpringCloudConfig.instance()
     })
 })
 
