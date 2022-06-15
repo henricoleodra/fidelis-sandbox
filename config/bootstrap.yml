@@ -1,0 +1,11 @@
+spring:
+   application:
+      name: redis
+   cloud:
+      config:
+         enabled: true
+         endpoint: https://github.com/henricoleodra/sandbox-cloud-config
+         server:
+            git:
+               uri: https://github.com/henricoleodra/sandbox-cloud-config
+               skipSslValidation: true
