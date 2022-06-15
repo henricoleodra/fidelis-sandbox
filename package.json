@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "start:dev": "nodemon index.js",
     "start:prod": "node index.js",
     "deploy": "cf push -f manifest.yml"
