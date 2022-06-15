@@ -1,0 +1,22 @@
+{
+  "name": "fidelis-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start:prod": "node index.js",
+    "deploy": "cf push -f manifest.yml"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloud-config-client": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "winston": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

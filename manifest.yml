@@ -1,0 +1,10 @@
+---
+applications:
+  - name: gwn-dev-fakeapi
+    memory: 200M
+    disk_quota: 200M
+    instances: 10
+    command: node index.js
+    buildpack: nodejs_buildpack1_7_65
+    routes:
+      - route: https://gwn-dev-fakeapi.apps.pcf.it
